@@ -2,7 +2,7 @@ import streamlit as st
 
 from langchain_chroma import Chroma
 from langchain_huggingface import HuggingFaceEmbeddings
-from langchain_ollama import ChatOllama
+from langchain_google_genai import ChatGoogleGenerativeAI
 
 st.set_page_config(page_title="Real Estate RAG", page_icon="🏠")
 
@@ -19,7 +19,10 @@ vector_store = Chroma(
 
 retriever = vector_store.as_retriever(search_kwargs={"k": 2})
 
-llm = ChatOllama(model="llama3.2")
+llm = ChatGoogleGenerativeAI(
+    model="gemini-2.5-flash",
+    temperature=0
+)
 
 question = st.text_input("Ask about a property")
 
