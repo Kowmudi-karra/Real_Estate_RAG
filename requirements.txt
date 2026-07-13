@@ -7,4 +7,6 @@ langchain-huggingface
 langchain-google-genai
 chromadb
 sentence-transformers
+torch
+torchvision
 pypdf
