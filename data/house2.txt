@@ -1,0 +1,11 @@
+Property: 2BHK Apartment
+Location: Bangalore
+Price: ₹75 Lakhs
+Bedrooms: 2
+Bathrooms: 2
+Area: 1200 sq.ft
+
+Amenities:
+- Lift
+- Gym
+- Security

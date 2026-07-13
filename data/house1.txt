@@ -1,0 +1,11 @@
+Property: Luxury Villa
+Location: Hyderabad
+Price: ₹1.5 Crore
+Bedrooms: 4
+Bathrooms: 3
+Area: 2500 sq.ft
+
+Amenities:
+- Swimming Pool
+- Garden
+- Parking
