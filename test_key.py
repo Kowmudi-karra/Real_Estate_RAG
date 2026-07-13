@@ -1,16 +1,10 @@
-from google import genai
 from dotenv import load_dotenv
 import os
 
 load_dotenv()
 
-api_key = os.getenv("GOOGLE_API_KEY")
+google_key = os.getenv("GOOGLE_API_KEY")
+model = os.getenv("MODEL_NAME")
 
-client = genai.Client(api_key=api_key)
-
-response = client.models.generate_content(
-    model="gemini-2.0-flash",
-    contents="Hello"
-)
-
-print(response.text)
+print("API Key:", google_key)
+print("Model:", model)
